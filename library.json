@@ -1,0 +1,27 @@
+{
+  "name": "memfault-firmware-sdk",
+  "version": "1.11.1",
+  "keywords": "string formatting",
+  "description": "Memfault is a complete device monitoring solution integrating into any embedded device.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/memfault/memfault-firmware-sdk"
+  },
+  "authors": [{
+    "name": "fmtlib",
+    "url": "http://fmt.dev"
+  }],
+  "build": {
+    "includeDir": ".",
+    "flags": [
+      " -I components/include",
+      " -I ports/include"
+    ],
+    "srcDir": ".",
+    "srcFilter": "+<components/**/*.c>"
+
+  },
+  "frameworks": "*",
+  "platforms": "*"
+}
+
