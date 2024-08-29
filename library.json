@@ -14,12 +14,11 @@
   "build": {
     "includeDir": ".",
     "flags": [
-      " -I components/include",
-      " -I ports/include"
+      "-I components/include",
+      "-I ports/include"
     ],
     "srcDir": ".",
-    "srcFilter": "+<components/**/*.c>"
-
+    "extraScript": "platformio/src-selection.py"
   },
   "frameworks": "*",
   "platforms": "*"
